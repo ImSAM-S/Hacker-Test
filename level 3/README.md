@@ -6,20 +6,28 @@
 Go to its View Source and look at this code
 
 ```
-</script>
-<script language="JavaScript" type="text/javascript">
-var pass, i;
-pass=prompt("Please enter password!","");
-if (pass=="l3l") {
-window.location.href="http://www.hackertest.net/"+pass+".htm";
-i=4;
+<body onload=javascript:pass(); alink="#000000">
+<SCRIPT LANGUAGE="JavaScript">
+function pass()
+{
+var pw, Eingabe;
+pw=window.document.alinkColor;
+Eingabe=prompt ("Please enter password");
+if (Eingabe==pw)
+{
+window.location.href=String.fromCharCode(97,98,114,97,101)+".htm";
 }
-</script>
+else
+{
+alert("Try again");
+}
+}
+</SCRIPT>
 ```
-We can see in here the password is 'l3l' 
+We can see in here the password is ```pw=window.document.alinkColor; ``` and ``` alink="#000000" ```
 
-### Enter "l3l" the password
+### Enter "#000000" the password
 
-**Next level:** [www.hackertest.net/null.htm](https://www.hackertest.net/null.htm)
+**Next level:** [www.hackertest.net/null.htm](https://www.hackertest.net/abrae.htm )
 
-**Next solution:** [Level 3](https://github.com/ImSAM-S/Hacker-Test/tree/main/level%202%20)
+**Next solution:** [Level 4](https://github.com/ImSAM-S/Hacker-Test/tree/main/level%204)
