@@ -1,27 +1,36 @@
+# LEVEL 16
 
-# LEVEL 15
-
-![image](https://github.com/ImSAM-S/Hacker-Test/blob/039ce05e57246517b3e223a4dc498f0ebe4c22b8/level%2015/level15.png)
+![image](https://github.com/ImSAM-S/Hacker-Test/blob/f07a8b348424fef94bb99608ad5485167e24ba5c/level%2016/level16.png)
 
 # SOLUTION
+Open View Source:
 
-Click to the link in the web : 
-" 
-Since you still have your photoshop open, check this out: images/pass2level16.jpg << good luck with it!
-"
-
-Click to that "images/pass2level16.jpg" 
-
-And open it's View Source you will see:
+you can see this line:
 ```
-Level 16: unavailable
+UNAVAILABLE
+<!-- level 17: /images" -->
+```
+So now we have new domain: 'hackertest.net/unavailable/images'
+
+So when we on that web, we View Source again and see:
+
+```
+<body background="bg.jpg">
 ```
 
-So yea new domain: './unavailable'
+So we continue put that at the end of domain and have this link: 'hackertest.net/unavailable/images/bg.jpg'
 
-**Next level:** [www.hackertest.net/unavailable](https://www.hackertest.net/unavailable)
+That take us to a web have nothing with error img :V . So we View Source again and see this line on top:
 
-**Next solution:** [Level 16](https://github.com/ImSAM-S/Hacker-Test/tree/main/level%2016)
+```
+ÿØÿà JFIF   d d  ÿì Ducky.php     P  ÿî Adobe dÀ   ÿÛ
+```
+
+That is our answer: 'Ducky.php'
+
+**Next level:** [www.hackertest.net/unavailable/Ducky.php](https://www.hackertest.net/unavailable/Ducky.php)
+
+**Next solution:** [Level 17](https://github.com/ImSAM-S/Hacker-Test/tree/main/level%2017)
 
 
 
